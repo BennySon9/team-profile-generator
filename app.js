@@ -27,7 +27,7 @@ const promptManager = () => {
       },
       {
         type: "input",
-        name: "id",
+        name: "employeeId",
         message: "What is your id? (REQUIRED)",
         validate: (employeeId) => {
           if (employeeId) {
@@ -86,9 +86,9 @@ const promptMenu = () => {
         name: "menu",
         message: "Please select an option:",
         choices: [
-          "add an engineer",
-          "add an intern",
-          "finish building my team",
+          "Add an engineer",
+          "Add an intern",
+          "Completed building my team",
         ],
       },
     ])
@@ -108,9 +108,9 @@ const promptMenu = () => {
 
 const promptEngineer = () => {
   console.log(`
-  =================
+  ==================
   Add a New Engineer
-  =================
+  ==================
     `);
   return inquirer
     .prompt([
@@ -184,9 +184,9 @@ const promptEngineer = () => {
 
 const promptIntern = () => {
   console.log(`
-  =================
+  ================
   Add a New Intern
-  =================
+  ================
     `);
   return inquirer
     .prompt([
@@ -258,10 +258,11 @@ const promptIntern = () => {
 
 const buildTeam = () => {
   console.log(`
-  =================
+  ==========================
   Finished building MY team!
-  =================
+  ==========================
     `);
+  console.log("Refer to output folder to see your new team.html!");
   // output directory
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR);

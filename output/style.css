@@ -10,7 +10,7 @@
 #navbar {
   background-color: var(--primary);
   color: var(--secondary);
-  font-size: 50px;
+  font-size: 60px;
 }
 
 .navbar-brand {
