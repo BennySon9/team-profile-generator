@@ -21,7 +21,9 @@
   },
   "homepage": "https://github.com/BennySon9/team-profile-generator#readme",
   "dependencies": {
+    "fs": "^0.0.1-security",
     "inquirer": "^8.2.4",
-    "jest": "^28.1.1"
+    "jest": "^28.1.1",
+    "style-sheet": "^4.0.4"
   }
 }
