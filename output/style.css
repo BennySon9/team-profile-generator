@@ -10,11 +10,11 @@
 #navbar {
   background-color: var(--primary);
   color: var(--secondary);
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .navbar-brand {
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .card-header {

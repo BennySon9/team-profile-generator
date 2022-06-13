@@ -94,10 +94,10 @@ const promptMenu = () => {
     ])
     .then((userChoice) => {
       switch (userChoice.menu) {
-        case "add an engineer":
+        case "Add an engineer":
           promptEngineer();
           break;
-        case "add an intern":
+        case "Add an intern":
           promptIntern();
           break;
         default:
@@ -108,9 +108,9 @@ const promptMenu = () => {
 
 const promptEngineer = () => {
   console.log(`
-  ==================
+  =================
   Add a New Engineer
-  ==================
+  =================
     `);
   return inquirer
     .prompt([
@@ -184,9 +184,9 @@ const promptEngineer = () => {
 
 const promptIntern = () => {
   console.log(`
-  ================
+  =================
   Add a New Intern
-  ================
+  =================
     `);
   return inquirer
     .prompt([
@@ -258,11 +258,10 @@ const promptIntern = () => {
 
 const buildTeam = () => {
   console.log(`
-  ==========================
+  =================
   Finished building MY team!
-  ==========================
+  =================
     `);
-  console.log("Refer to output folder to see your new team.html!");
   // output directory
   if (!fs.existsSync(OUTPUT_DIR)) {
     fs.mkdirSync(OUTPUT_DIR);
